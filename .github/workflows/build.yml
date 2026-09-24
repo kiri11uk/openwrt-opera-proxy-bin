@@ -53,7 +53,7 @@ jobs:
             pkg_arch: "aarch64_cortex-a53"
             goarch: "arm64"
             gomips: ""
-            sdk_url: "https://downloads.openwrt.org/releases/25.12.4/targets/mediatek/filogic/openwrt-sdk-25.12.4-mediatek-filogic_gcc-14.3.0_musl.Linux-x86_64.tar.zst"
+            sdk_url: "https://downloads.openwrt.org/releases/25.12.5/targets/mediatek/filogic/openwrt-sdk-25.12.5-mediatek-filogic_gcc-14.3.0_musl.Linux-x86_64.tar.zst"
 
           - openwrt_ver: "25.12"
             pkg_ext: "apk"
