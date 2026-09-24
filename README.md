@@ -5,7 +5,7 @@
 
 | Архитектура | Таргет (Target) | Процессоры (Примеры) |
 | :--- | :--- | :--- |
-| **mipsel_24kc** | `ramips/mt7621` | **MT7621** (Keenetic Viva/Kn-1810, Xiaomi AC2100) |
+| **arm_cortex-a7_neon-vfpv4** | `ipq40xx` | **ARMv7** (linksys_whw03v2) |
 | **aarch64_cortex-a53** | `mediatek/filogic` | **MT7981/7986** (Xiaomi AX3000T, TUF-AX4200) |
 
  Требования к памяти: Размер установленного бинарного файла в /usr/bin/ составляет около 2,5 MB.  (сжат с помощью UPX для уменьшения объема).  Убедитесь, что у вас достаточно свободного места в системном разделе (Flash) или используйте Extroot.
@@ -35,7 +35,7 @@ config instance 'Asia'
 
 Выполнить в консоли:
 ```
-apk add --allow-untrusted /tmp/opera-proxy-*.apk
+apk add --allow-untrusted /tmp/opera-proxy.apk
 ```
 
   Подробнее про настройки можно прочитать на странице https://github.com/Alexey71/opera-proxy
@@ -45,11 +45,19 @@ apk add --allow-untrusted /tmp/opera-proxy-*.apk
 
 
 
-Конфигурация Outbound для Podkop
-```
-  {
-      "type": "http",
-      "server": "127.0.0.1",
-      "server_port": 18081
-    }
-```
+Конфигурация SSClash
+
+- name: "Opera-EU"
+  type: socks5
+  server: 127.0.0.1
+  port: 18081
+
+- name: "Opera-US"
+  type: socks5
+  server: 127.0.0.1
+  port: 18082
+
+- name: "Opera-AS"
+  type: socks5
+  server: 127.0.0.1
+  port: 18083
