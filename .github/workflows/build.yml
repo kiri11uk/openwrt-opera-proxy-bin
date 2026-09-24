@@ -43,7 +43,7 @@ jobs:
           - openwrt_ver: "24.10"
             pkg_ext: "ipk"
             pkg_arch: "arm_cortex-a7_neon-vfpv4"
-            goarch: "armv7a"
+            goarch: "arm"
             gomips: ""
             sdk_url: "https://downloads.openwrt.org/releases/24.10.8/targets/ipq40xx/generic/openwrt-sdk-24.10.8-ipq40xx-generic_gcc-13.3.0_musl_eabi.Linux-x86_64.tar.zst"
           
@@ -58,7 +58,7 @@ jobs:
           - openwrt_ver: "25.12"
             pkg_ext: "apk"
             pkg_arch: "arm_cortex-a7_neon-vfpv4"
-            goarch: "armv7a"
+            goarch: "arm"
             gomips: ""
             sdk_url: "https://downloads.openwrt.org/releases/25.12.5/targets/ipq40xx/generic/openwrt-sdk-25.12.5-ipq40xx-generic_gcc-14.3.0_musl_eabi.Linux-x86_64.tar.zst"
     steps:
