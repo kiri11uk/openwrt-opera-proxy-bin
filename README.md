@@ -46,18 +46,21 @@ apk add --allow-untrusted /tmp/opera-proxy.apk
 
 
 Конфигурация SSClash
+```
+  {
+      - name: "Opera-EU"
+        type: socks5
+        server: 127.0.0.1
+        port: 18081
 
-- name: "Opera-EU"
-  type: socks5
-  server: 127.0.0.1
-  port: 18081
+      - name: "Opera-US"
+        type: socks5
+        server: 127.0.0.1
+        port: 18082
 
-- name: "Opera-US"
-  type: socks5
-  server: 127.0.0.1
-  port: 18082
-
-- name: "Opera-AS"
-  type: socks5
-  server: 127.0.0.1
-  port: 18083
+      - name: "Opera-AS"
+        type: socks5
+        server: 127.0.0.1
+        port: 18083
+    }
+```
