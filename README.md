@@ -19,6 +19,10 @@ config instance 'default'
   option enabled '1'
   option args '--bind-address 127.0.0.1:18081'
 
+config instance 'Euro'
+  option enabled '1'
+  option args '--bind-address 127.0.0.1:18081 -country EU -socks-mode'
+
 config instance 'Americas'
   option enabled '1'
   option args '--bind-address 127.0.0.1:18082 -country AM -socks-mode'
