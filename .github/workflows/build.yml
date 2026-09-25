@@ -61,6 +61,13 @@ jobs:
             goarch: "arm"
             gomips: ""
             sdk_url: "https://downloads.openwrt.org/releases/25.12.5/targets/ipq40xx/generic/openwrt-sdk-25.12.5-ipq40xx-generic_gcc-14.3.0_musl_eabi.Linux-x86_64.tar.zst"
+
+          - openwrt_ver: "25.12"
+            pkg_ext: "apk"
+            pkg_arch: "x86"
+            goarch: "amd64"
+            gomips: ""
+            sdk_url: "https://downloads.openwrt.org/releases/25.12.5/targets/x86/64/openwrt-sdk-25.12.5-x86-64_gcc-14.3.0_musl.Linux-x86_64.tar.zst"
     steps:
       # Клонируем НАШ собственный репозиторий, где лежат папка opera-proxy и Makefile
       - uses: actions/checkout@v6
